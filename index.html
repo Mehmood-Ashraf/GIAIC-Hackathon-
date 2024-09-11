@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Static Resume Builder</h1>
+    </div>
+
+    <form id="resumeform">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full-Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Full name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone" required>
+
+            <button id="btn1">Continue</button>
+
+        </fieldset>
+
+        <fieldset id="edu-section">
+            <legend>Education</legend>
+
+            <label for="education">Education:</label>
+            <textarea name="education" id="education" rows="6" required></textarea>
+
+            <button id="btn3">Continue</button>
+        </fieldset>
+
+        <fieldset id="exp-section">
+            <legend>Experience</legend>
+            <label for="experience">Experince:</label>
+            <textarea name="experience" id="experience" rows="6" required></textarea>
+
+            <button id="btn4">Continue</button>
+        </fieldset>
+
+        <fieldset id="skl-section">
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea name="skills" id="skills" rows="6" required></textarea>
+        </fieldset>
+
+        <button id="btn2" type="submit">Generate Resume</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
